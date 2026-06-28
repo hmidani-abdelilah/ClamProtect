@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;all/all;
+Actions=scan
+X-KDE-Priority=Top
+
+[Desktop Action scan]
+Name=Scan with ClamProtect
+Name[ar]=افحص باستخدام ClamProtect
+Icon=clamprotect
+Exec=clamprotect-scan %f

@@ -1,0 +1,42 @@
+#! /usr/bin/python3
+"""Scan files/folders with ClamProtect from file manager context menu."""
+import subprocess, sys, json
+from pathlib import Path
+
+def scan(path):
+    p = str(Path(path).resolve())
+    if not Path(p).exists():
+        return [{"path": p, "status": "error", "virus": "not found"}]
+    try:
+        from core.scanner import Scanner
+        s = Scanner()
+        return s.scan(p)
+    except ImportError:
+        proc = subprocess.run(
+            ["clamscan", "--no-summary", "--infected", "-r", p],
+            capture_output=True, text=True,
+        )
+        results = []
+        for line in proc.stdout.strip().split("\n"):
+            line = line.strip()
+            if not line or ": " not in line:
+                continue
+            fp, st = line.split(": ", 1)
+            if "FOUND" in st:
+                results.append({"path": fp, "status": "infected", "virus": st.replace(" FOUND","").strip()})
+            elif "OK" in st:
+                results.append({"path": fp, "status": "clean", "virus": None})
+        return results
+
+if __name__ == "__main__":
+    for arg in sys.argv[1:]:
+        results = scan(arg)
+        infected = [r for r in results if r["status"] == "infected"]
+        if infected:
+            print(f"⚠ {arg}: {len(infected)} threat(s) found")
+            for r in infected:
+                print(f"  {r['virus']} — {r['path']}")
+        else:
+            total = len(results)
+            clean = sum(1 for r in results if r["status"] == "clean")
+            print(f"✓ {arg}: {total} files, {clean} clean")

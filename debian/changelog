@@ -1,0 +1,31 @@
+clamprotect (1.0.1-1) unstable; urgency=medium
+
+  * Version bump 1.0.0 → 1.0.1.
+  * README MCP/AI references removed.
+  * Rebuilt packages (.deb, .rpm, AppImage).
+
+ -- ClamProtect Team <team@clamprotect.local>  Sun, 28 Jun 2026 00:00:00 +0000
+
+clamprotect (1.0.0-2) unstable; urgency=medium
+
+  * MCP Analytics Engine (stats, trends, recommendations, report tools).
+  * MCP Reports Dashboard (live status, threat rate, recommendations).
+  * Security Audit Dashboard (8 system-hardening checks).
+  * VirusTotal hash lookup integrated into scan results.
+  * On-access scanning (clamonacc) and USB auto-scan.
+  * Scan profiles with JSON import/export.
+  * Scan cancel support (both clamd and clamscan).
+  * Quick Scan (5 common locations).
+  * History CSV export.
+  * Comprehensive README updated in EN/FR/AR.
+  * PyQt6 enum compatibility fix.
+
+ -- ClamProtect Team <team@clamprotect.local>  Fri, 26 Jun 2026 00:00:00 +0000
+
+clamprotect (1.0.0-1) unstable; urgency=medium
+
+  * Initial release.
+  * ClamAV GUI with on-demand, real-time, and scheduled scanning.
+  * Quarantine management, scan history, and system tray integration.
+
+ -- ClamProtect Team <team@clamprotect.local>  Sun, 21 Jun 2026 00:00:00 +0000

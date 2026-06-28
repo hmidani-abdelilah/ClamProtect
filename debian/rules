@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3
+
+# Désactiver les étapes de build automatiques
+override_dh_auto_clean:
+override_dh_auto_configure:
+override_dh_auto_build:
+override_dh_auto_test:
+
+# Copier les scripts et appliquer les permissions
+override_dh_auto_install:
+	mkdir -p debian/clamprotect/usr/share/clamprotect
+	cp -r main.py core ui watcher debian/clamprotect/usr/share/clamprotect/
+	# CRITICAL : Assure que le script principal est exécutable dans le paquet final
+	chmod +x debian/clamprotect/usr/share/clamprotect/main.py
+

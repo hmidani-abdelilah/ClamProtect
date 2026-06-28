@@ -1,0 +1,5 @@
+resources/clamprotect.desktop usr/share/applications/
+resources/icons/clamprotect.svg usr/share/icons/hicolor/scalable/apps/
+resources/clamprotect-scan usr/bin/
+resources/clamprotect_nautilus.py usr/share/nautilus-python/extensions/
+resources/clamprotect_dolphin.desktop usr/share/kio/servicemenus/

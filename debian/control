@@ -1,0 +1,28 @@
+Source: clamprotect
+Section: utils
+Priority: optional
+Maintainer: ClamProtect Team <team@clamprotect.local>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.6.2
+Homepage: https://github.com/clamprotect/clamprotect
+
+Package: clamprotect
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends},
+ python3-pyqt6,
+ clamav-daemon | clamav,
+ python3-nautilus (>= 4.0) | nautilus-python,
+Description: Modern ClamAV GUI — Real-time malware protection
+ ClamProtect brings a modern graphical interface to ClamAV.
+ It offers on-demand scanning, real-time file monitoring,
+ scheduled scans, quarantine management, and system tray
+ integration — all without requiring a server daemon.
+ .
+ Features:
+  * On-demand drag-and-drop scanning
+  * Real-time file monitoring with auto-quarantine
+  * Scheduled scans via crontab
+  * Quarantine management (restore / delete)
+  * Scan history with stats cards
+  * Dark & Light themes
+  * System tray background operation
