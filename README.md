@@ -79,7 +79,7 @@ After these steps, ClamProtect's "Update Definitions" button and scheduled updat
 ### From Source
 
 ```bash
-git clone https://github.com/your-org/ClamProtect.git
+git clone https://github.com/hmidani-abdelilah/ClamProtect.git
 cd ClamProtect
 
 # Create virtual environment (recommended)
@@ -487,7 +487,7 @@ Après ces étapes, le bouton "Mettre à jour les définitions" fonctionne sans 
 ### Depuis les sources
 
 ```bash
-git clone https://github.com/your-org/ClamProtect.git
+git clone https://github.com/hmidani-abdelilah/ClamProtect.git
 cd ClamProtect
 
 # Créer un environnement virtuel (recommandé)
@@ -895,7 +895,7 @@ freshclam -v --user=$USER --show-progress
 ### من المصدر
 
 ```bash
-git clone https://github.com/your-org/ClamProtect.git
+git clone https://github.com/hmidani-abdelilah/ClamProtect.git
 cd ClamProtect
 
 # إنشاء بيئة افتراضية (موصى به)
