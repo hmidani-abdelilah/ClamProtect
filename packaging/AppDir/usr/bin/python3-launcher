@@ -1,0 +1,11 @@
+#!/bin/bash
+BIN_DIR="$(cd "$(dirname "$0")" && pwd)"
+HERE="$(cd "${BIN_DIR}/../share/clamprotect" && pwd)"
+
+BUNDLE_LIBS="${HERE}/pylibs/PyQt6/Qt6/lib"
+
+export PYTHONPATH="${HERE}/pylibs:${HERE}:${PYTHONPATH:-}"
+export QT_PLUGIN_PATH="${HERE}/pylibs/PyQt6/Qt6/plugins:${QT_PLUGIN_PATH:-}"
+export LD_LIBRARY_PATH="${BUNDLE_LIBS}:${LD_LIBRARY_PATH:-}"
+
+exec python3 "$@"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.clamprotect.clamprotect</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>ClamProtect</name>
+  <summary>Modern ClamAV GUI — Real-time malware protection</summary>
+  <developer id="team.clamprotect">
+    <name>ClamProtect Team</name>
+  </developer>
+  <description>
+    <p>ClamProtect brings a modern graphical interface to ClamAV. It offers on-demand scanning, real-time file monitoring, scheduled scans, quarantine management, and system tray integration.</p>
+  </description>
+  <url type="homepage">https://github.com/clamprotect/clamprotect</url>
+  <launchable type="desktop-id">clamprotect.desktop</launchable>
+  <categories>
+    <category>Utility</category>
+    <category>Security</category>
+  </categories>
+  <releases>
+    <release version="1.0.1" date="2026-06-28"/>
+    <release version="1.0.0" date="2026-06-26"/>
+  </releases>
+</component>

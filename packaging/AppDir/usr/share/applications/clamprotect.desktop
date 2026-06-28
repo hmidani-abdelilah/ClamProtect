@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ClamProtect
+Comment=Modern ClamAV Antivirus Scanner
+Exec=clamprotect
+Icon=clamprotect
+Terminal=false
+Type=Application
+Categories=Utility;Security;
+StartupNotify=true
