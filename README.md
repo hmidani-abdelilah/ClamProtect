@@ -9,7 +9,14 @@
 **ClamProtect** is a desktop antivirus application that brings a modern graphical interface to [ClamAV](https://www.clamav.net/). It offers on-demand scanning, real-time file monitoring, scheduled scans, quarantine management, and system tray integration — all without requiring a server daemon.
 
 ---
+![ClamProtect](https://raw.githubusercontent.com/hmidani-abdelilah/ClamProtect/refs/heads/main/2026-06-28_16-17.png)
 
+![ClamProtect sec](https://raw.githubusercontent.com/hmidani-abdelilah/ClamProtect/refs/heads/main/2026-06-28_16-13.png)
+
+![CLamProtec qua](https://raw.githubusercontent.com/hmidani-abdelilah/ClamProtect/refs/heads/main/2026-06-28_16-20.png)
+
+![ClamProtrct settinge](https://raw.githubusercontent.com/hmidani-abdelilah/ClamProtect/refs/heads/main/2026-06-28_16-21.png)
+---
 ## Features
 
 | Feature | Description |
